@@ -1,0 +1,27 @@
+# dependencies
+blosc2==2.0.0
+gensim
+phik==0.11.1
+
+
+# Data Manipulation
+pandarallel
+polars
+
+# Decision Trees(LightGBM would be installed via Dockerfile)
+xgboost
+catboost
+shap
+optuna
+imbalanced-learn
+
+# EDA & Visualization
+sweetviz
+pygwalker
+matplotlib
+seaborn
+plotly
+
+# AutoML
+pycaret[full]
+flaml

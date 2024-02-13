@@ -1,0 +1,58 @@
+# LangChain
+langchain
+langchain-core
+langchain-cli
+langchain-experimental
+langchain-community
+langchain-openai
+langchain-google-genai
+langgraph
+
+# Langchain-related
+annoy
+chromadb
+duckdb
+faiss-cpu
+llama-cpp-python
+dspy-ai
+spacy
+google-search-results
+
+# Google Gemini
+google-generativeai
+
+# torch & HuggingFace
+torch
+transformers
+ctransformers
+sentence-transformers
+
+# MS-autogen
+pyautogen
+autogenstudio
+
+# CrewAI
+crewai
+duckduckgo-search
+
+# Sound-related
+ffmpeg-python
+soundfile
+librosa
+
+# System
+ipywidgets
+jupyterlab
+notebook
+
+# DB-related
+pyodbc
+pyspark
+pymongo
+
+# utility
+streamlit
+pytubes
+jinja2
+blosc2~=2.0.0
+cython 
