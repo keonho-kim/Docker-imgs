@@ -5,19 +5,6 @@
 </ul>
 
 ## Library Included
-<style>
-  ul {
-    background-color: #f5f5f5; /* Pale grey background */
-    padding: 10px;
-    border-radius: 10px;
-  }
-  li {
-    margin-bottom: 10px; /* Increased margin for more space */
-  }
-  li strong {
-    font-weight: bold;
-  }
-</style>
 
 <ul>
   <li><b>Models:</b> OpenAI, Google Gemini (google-generativeai), LLaMA.cpp, Whisper.cpp</li>
