@@ -47,10 +47,9 @@ notebook
 
 # Streamlit
 streamlit
-streamlit-audiorecorder
+audio-recorder-streamlit
 
 # Utilities
-pytubes
 jinja2
 blosc2~=2.0.0
 cython 
