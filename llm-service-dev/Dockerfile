@@ -78,32 +78,6 @@ RUN git clone https://github.com/ggerganov/whisper.cpp.git && \
 # NodeJS
 RUN sudo apt-get update && sudo apt-get install nodejs -y
 
-# SQLite 3 & MongoDB
-RUN sudo apt install sqlite3 -y && \
-    sudo add-apt-repository universe && \
-    wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc | \
-    gpg --dearmor | \
-    sudo tee /usr/share/keyrings/mongodb.gpg > /dev/null && \
-    echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | \
-    sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list && \
-    sudo apt-get update && \
-    sudo apt-get install -y mongodb-org && \
-    echo "mongodb-org hold" | sudo dpkg --set-selections && \
-    echo "mongodb-org-database hold" | sudo dpkg --set-selections && \
-    echo "mongodb-org-server hold" | sudo dpkg --set-selections && \
-    echo "mongodb-mongosh hold" | sudo dpkg --set-selections && \
-    echo "mongodb-org-mongos hold" | sudo dpkg --set-selections && \
-    echo "mongodb-org-tools hold" | sudo dpkg --set-selections
-
-# Apache Spark
-RUN sudo apt install openjdk-17-jdk -y && \
-    wget https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz && \
-    tar xvf spark-3.5.0-bin-hadoop3.tgz && \
-    sudo mv spark-3.5.0-bin-hadoop3 /opt/spark && \
-    echo "export SPARK_HOME=/opt/spark" >> ~/.bashrc && \
-    echo "export PATH=$PATH:$SPARK_HOME/bin" >> ~/.bashrc && \
-    echo "source ~/.bashrc"
-
 # LLaMA.cpp
 RUN git clone https://github.com/ggerganov/llama.cpp && \
 	cd llama.cpp && make

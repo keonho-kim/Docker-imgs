@@ -45,11 +45,6 @@ ipywidgets
 jupyterlab
 notebook
 
-# DB-related
-pyodbc
-pyspark
-pymongo
-
 # Streamlit
 streamlit
 streamlit-audiorecorder
