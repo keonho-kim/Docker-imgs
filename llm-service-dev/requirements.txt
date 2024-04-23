@@ -39,6 +39,7 @@ duckduckgo-search
 ffmpeg-python
 soundfile
 librosa
+streamlit-audiorecorder
 
 # System
 ipywidgets
@@ -49,7 +50,6 @@ notebook
 pyodbc
 pyspark
 pymongo
-
 # utility
 streamlit
 pytubes
