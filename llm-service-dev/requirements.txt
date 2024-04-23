@@ -39,7 +39,6 @@ duckduckgo-search
 ffmpeg-python
 soundfile
 librosa
-streamlit-audiorecorder
 
 # System
 ipywidgets
@@ -50,8 +49,12 @@ notebook
 pyodbc
 pyspark
 pymongo
-# utility
+
+# Streamlit
 streamlit
+streamlit-audiorecorder
+
+# Utilities
 pytubes
 jinja2
 blosc2~=2.0.0
